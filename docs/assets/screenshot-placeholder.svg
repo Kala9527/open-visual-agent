@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Open Visual Agent screenshot placeholder">
+  <rect width="1280" height="720" fill="#f6f5ef"/>
+  <rect x="40" y="40" width="1200" height="640" rx="8" fill="#fffdf8" stroke="#d9ddd6"/>
+  <rect x="72" y="72" width="220" height="576" rx="8" fill="#18201f"/>
+  <rect x="326" y="72" width="842" height="210" rx="8" fill="#e4f1eb"/>
+  <rect x="326" y="314" width="260" height="150" rx="8" fill="#ffffff" stroke="#d9ddd6"/>
+  <rect x="610" y="314" width="260" height="150" rx="8" fill="#ffffff" stroke="#d9ddd6"/>
+  <rect x="894" y="314" width="274" height="150" rx="8" fill="#ffffff" stroke="#d9ddd6"/>
+  <rect x="326" y="496" width="842" height="92" rx="8" fill="#111817"/>
+  <text x="96" y="116" fill="#f1d36b" font-family="Arial, sans-serif" font-size="30" font-weight="700">OVA</text>
+  <text x="364" y="152" fill="#18201f" font-family="Arial, sans-serif" font-size="46" font-weight="700">Open Visual Agent</text>
+  <text x="364" y="210" fill="#66706c" font-family="Arial, sans-serif" font-size="24">AI image, video, prompt packs, and API workbench</text>
+  <text x="364" y="556" fill="#e6f1ed" font-family="Arial, sans-serif" font-size="24">Replace this placeholder with a real screenshot after local setup.</text>
+</svg>

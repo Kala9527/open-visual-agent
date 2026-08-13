@@ -1,0 +1,20 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    env_file:
+      - .env
+    ports:
+      - "8007:8007"
+    volumes:
+      - ./outputs:/app/outputs
+      - ./backend/app/data:/app/backend/app/data
+
+  web:
+    build:
+      context: ./frontend
+    depends_on:
+      - api
+    ports:
+      - "5177:80"
