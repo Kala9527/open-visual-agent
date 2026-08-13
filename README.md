@@ -1,160 +1,111 @@
-# Open Visual Agent
+﻿# Open Visual Agent
 
-> A forkable AI image and video studio with prompt packs, an OpenAI-compatible API, and agent-ready CLI scripts.
+> Forkable AI image and video studio with prompt packs, OpenAI-compatible API, and agent-ready CLI scripts.  
+> 中文：可 Fork 的 AI 图片/视频工作台，内置提示词模板、OpenAI 兼容 API 与 Agent CLI 脚本。
 
-[![CI](https://github.com/Kala9527/open-visual-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Kala9527/open-visual-agent/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688)](https://fastapi.tiangolo.com/)
-[![Vue 3](https://img.shields.io/badge/Vue-3-42b883)](https://vuejs.org/)
-
-Open Visual Agent helps builders ship a polished visual AI product fast: image generation, video tasks, prompt templates, local session history, OpenAI-compatible routes, and JSON-first CLI scripts for AI coding agents.
-
-![Open Visual Agent screenshot placeholder](docs/assets/screenshot-placeholder.svg)
+This repository is packaged to be easy to **star, fork, run, remix, and contribute to**. It keeps the first screen English-first for global GitHub discovery, while preserving a Chinese guide below.
 
 ## Why Star This
 
-- **Ready-to-fork full stack**: FastAPI backend, Vue 3 studio, Docker, CI, docs, and templates.
-- **OpenAI-compatible**: expose `/v1/chat/completions`, `/v1/models`, and `/v1/images/generations`.
-- **Visual growth prompt pack**: practical prompts for launch pages, thumbnails, app screenshots, and video keyframes.
-- **Agent-friendly CLI**: scripts return structured JSON for Codex, Claude Code, Cursor, shell automation, and demos.
-- **No large files or secrets**: `.env`, generated media, databases, and build artifacts are ignored by default.
+- Practical project idea with a clear real-world use case.
+- Small enough to fork, study, and customize quickly.
+- English-first bilingual README for both global and Chinese-speaking developers.
+- Clean setup instructions, project structure, roadmap, and contribution entry points.
+- Built around popular GitHub themes such as AI tools, TypeScript, developer tools, local-first apps, automation, and indie-friendly workflows when relevant.
+
+## What It Does
+
+Forkable AI image and video studio with prompt packs, OpenAI-compatible API, and agent-ready CLI scripts.
+
+## Highlights
+
+- Image and video generation workflows
+- Prompt packs for launch visuals, thumbnails, app screenshots, and video keyframes
+- OpenAI-compatible routes for existing SDKs and tools
+- JSON-first CLI scripts for Codex, Cursor, Claude Code, and automation
+- Docker Compose, CI, docs, and contribution templates
+
+## Tech Stack
+
+`	ext
+Python, FastAPI, Vue 3, TypeScript, Docker
+`
 
 ## Quick Start
 
-```bat
-git clone https://github.com/Kala9527/open-visual-agent.git
-cd open-visual-agent
-copy .env.example .env
-setup_env.bat
-start.bat
-```
-
-In another terminal:
-
-```bat
-cd frontend
-npm install
-npm run dev
-```
-
-Open:
-
-- Web studio: http://127.0.0.1:5177
-- API docs: http://127.0.0.1:8007/docs
-
-## Docker
-
-```bash
-cp .env.example .env
-docker compose up --build
-```
-
-Then open http://127.0.0.1:5177.
-
-## Configure Providers
-
-Edit `.env`:
-
-```dotenv
-AGNES_TEXT_API_KEY=YOUR_TEXT_PROVIDER_API_KEY
-AGNES_TEXT_API_BASE_URL=https://apihub.agnes-ai.com/v1
-AGNES_TEXT_MODEL=agnes-2.0-flash
-
-AGNES_IMAGE_API_KEY=YOUR_IMAGE_PROVIDER_API_KEY
-AGNES_IMAGE_API_BASE_URL=https://apihub.agnes-ai.com/v1
-AGNES_IMAGE_MODEL=agnes-image-2.1-flash
-
-AGNES_VIDEO_API_KEY=YOUR_VIDEO_PROVIDER_API_KEY
-AGNES_VIDEO_API_BASE_URL=https://apihub.agnes-ai.com/v1
-AGNES_VIDEO_MODEL=agnes-video-v2.0
-```
-
-`.env` is ignored by Git. Do not commit real keys.
-
-## Features
-
-| Feature | What it does |
-| --- | --- |
-| Image studio | Generate images, pass reference image URLs, download outputs, and inspect raw provider results. |
-| Video task runner | Create text-to-video, image-to-video, and keyframe tasks, then poll status. |
-| Prompt packs | Copy practical launch, SaaS, thumbnail, app screenshot, and keyframe prompts. |
-| Agent scenarios | Growth marketer, creative director, developer advocate, and default creative copilot modes. |
-| OpenAI-compatible API | Use existing SDKs and tools against the local `/v1` API. |
-| CLI scripts | JSON-first commands for image, video, text generation, and video status checks. |
-| Local history | SQLite session and media output records for repeatable demos. |
-
-## CLI Examples
-
-```bat
-agent_cli_scripts\generate_text.bat --prompt "Write 5 launch hooks for an AI image app" --pretty
-agent_cli_scripts\generate_image.bat --prompt "A clean product render of an AI image studio" --size 1024x1024 --pretty
-agent_cli_scripts\generate_video.bat --prompt "A smooth camera move across a creator dashboard" --pretty
-agent_cli_scripts\video_status.bat --task-id TASK_ID --download --pretty
-```
-
-## OpenAI-Compatible Usage
-
-```text
-Base URL: http://127.0.0.1:8007/v1
-Chat Completions: /chat/completions
-Models: /models
-Images: /images/generations
-API Key: any placeholder value for local use
-```
+`ash
+copy .env.example .env`nsetup_env.bat`nstart.bat`n`ncd frontend`nnpm install`nnpm run dev
+`
 
 ## Project Structure
 
-```text
-open-visual-agent/
-  backend/              FastAPI routes, provider services, SQLite storage
-  frontend/             Vue 3 + TypeScript visual studio
-  prompts/              Copy-ready visual growth prompt packs
-  agent_cli_scripts/    JSON-first scripts for AI agents and automation
-  scripts/              Human CLI helpers
-  src/                  Compatibility package exports
-  docs/                 API and deployment docs
-```
+`	ext
+.
+|-- src/ or app/          Main source code
+|-- public/ or assets/    Static assets when available
+|-- docs/                 Notes, specs, or deployment docs when available
+|-- README.md             English-first bilingual project guide
+-- package / project files
+`
 
-## Open Source Packaging Checklist
+## Deployment / Packaging
 
-- [x] One-command local setup
-- [x] Docker Compose deployment
-- [x] GitHub Actions CI
-- [x] Prompt pack included
-- [x] Issue templates
-- [x] MIT license
-- [x] `.gitignore` blocks secrets, generated media, databases, and build output
-
-## Comparison
-
-| Project type | Open Visual Agent |
-| --- | --- |
-| Simple prompt list | Adds a real working studio and API. |
-| Single-provider image UI | Keeps text, image, and video provider config separate. |
-| Internal demo app | Ships docs, Docker, CI, templates, and contribution paths. |
-| Closed SaaS | Runs locally and can be forked, modified, and self-hosted. |
+- Do not commit generated builds, local databases, API keys, private logs, or large media files.
+- For frontend projects, deploy the production dist/ folder to GitHub Pages, Vercel, Netlify, Nginx, or package it with DistDesktopLauncher.
+- For desktop/mobile projects, publish only release artifacts from a clean build environment.
+- Keep configuration examples public and real credentials private.
 
 ## Roadmap
 
-- Provider presets for OpenAI, Replicate, SiliconFlow, Volcengine, and custom OpenAI-compatible gateways.
-- MCP server wrapper for image and video generation.
-- Prompt pack marketplace format.
-- Gallery view for generated assets.
-- Hosted demo screenshots and example outputs.
-- Tests for provider response parsing and video polling.
+- [ ] MCP server wrapper for visual generation
+- [ ] Provider presets for popular AI gateways
+- [ ] Gallery for generated assets
+- [ ] More prompt packs and example screenshots
 
 ## Contributing
 
-PRs are welcome. Good first contributions include prompt packs, provider setup guides, gallery UI, tests, and deployment recipes.
+Issues and pull requests are welcome. Useful contributions include better screenshots, demos, docs, templates, presets, provider guides, compatibility fixes, tests, and translations.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+If this project helps you, a star and fork make it easier for more people to discover it.
 
-## Deployment Notes
+---
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+# 中文说明
 
-Do not deploy with placeholder API keys. In production, store keys as environment variables or platform secrets, and persist only `outputs/` and the SQLite database if you need history.
+> 可 Fork 的 AI 图片/视频工作台，内置提示词模板、OpenAI 兼容 API 与 Agent CLI 脚本。
 
-## License
+这个仓库已经改成 **英文优先、中文在后** 的双语 README，方便 GitHub 全球用户第一眼理解项目，同时保留中文开发者阅读体验。
 
-MIT
+## 为什么值得 Star / Fork
+
+- 目标场景清晰，不是空壳项目。
+- 项目规模适合学习、二次开发和快速改造。
+- README、路线图、贡献入口和部署说明更完整。
+- topics 会尽量贴近当前 GitHub 热门方向，例如 AI、LLM、OpenAI-compatible、TypeScript、developer-tools、automation、local-first、gamedev 等。
+
+## 功能亮点
+
+- Image and video generation workflows
+- Prompt packs for launch visuals, thumbnails, app screenshots, and video keyframes
+- OpenAI-compatible routes for existing SDKs and tools
+- JSON-first CLI scripts for Codex, Cursor, Claude Code, and automation
+- Docker Compose, CI, docs, and contribution templates
+
+## 快速开始
+
+`ash
+copy .env.example .env`nsetup_env.bat`nstart.bat`n`ncd frontend`nnpm install`nnpm run dev
+`
+
+## 部署与安全
+
+- 不要提交 .env、API Key、生成媒体、大型文件、数据库、日志和构建产物。
+- 前端项目可以部署 dist/ 到 GitHub Pages、Vercel、Netlify 或 Nginx。
+- 桌面/移动端项目建议只发布干净环境构建出来的 release 文件。
+
+## 后续计划
+
+- [ ] MCP server wrapper for visual generation
+- [ ] Provider presets for popular AI gateways
+- [ ] Gallery for generated assets
+- [ ] More prompt packs and example screenshots
