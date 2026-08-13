@@ -1,74 +1,53 @@
-﻿# Open Visual Agent
+# Open Visual Agent
 
 [中文说明](./README.cn.md)
 
-> Forkable AI image and video studio with prompt packs, OpenAI-compatible API, and agent-ready CLI scripts.  
+> Forkable AI image and video studio with prompt packs, OpenAI-compatible API, and agent-ready CLI scripts.
 
-This repository is packaged to be easy to **star, fork, run, remix, and contribute to**. It keeps a dedicated English version for global GitHub discovery, with a separate Chinese version linked above.
+![python](https://img.shields.io/badge/python-111827?style=flat-square) ![fastapi](https://img.shields.io/badge/fastapi-111827?style=flat-square) ![vue](https://img.shields.io/badge/vue-111827?style=flat-square) ![ai-image](https://img.shields.io/badge/ai-image-111827?style=flat-square) ![openai-compatible](https://img.shields.io/badge/openai-compatible-111827?style=flat-square)
 
-## Why Star This
+## Showcase
 
-- Practical project idea with a clear real-world use case.
-- Small enough to fork, study, and customize quickly.
-- English-first bilingual README for both global and Chinese-speaking developers.
-- Clean setup instructions, project structure, roadmap, and contribution entry points.
-- Built around popular GitHub themes such as AI tools, TypeScript, developer tools, local-first apps, automation, and indie-friendly workflows when relevant.
-
-## What It Does
-
-Forkable AI image and video studio with prompt packs, OpenAI-compatible API, and agent-ready CLI scripts.
+![Open Visual Agent showcase](./docs/images/github-showcase.png)
 
 ## Highlights
 
-- Image and video generation workflows
-- Prompt packs for launch visuals, thumbnails, app screenshots, and video keyframes
-- OpenAI-compatible routes for existing SDKs and tools
-- JSON-first CLI scripts for Codex, Cursor, Claude Code, and automation
-- Docker Compose, CI, docs, and contribution templates
-
-## Tech Stack
-
-`	ext
-Python, FastAPI, Vue 3, TypeScript, Docker
-`
+- python
+- fastapi
+- vue
+- ai image
+- openai compatible
+- Practical project structure for learning, demos, and remixing.
+- Local-first setup where secrets, generated files, and build output stay out of Git.
 
 ## Quick Start
 
-`ash
-copy .env.example .env`nsetup_env.bat`nstart.bat`n`ncd frontend`nnpm install`nnpm run dev
-`
+```bash
+setup_env.bat
+start_all.bat
+```
 
 ## Project Structure
 
-`	ext
+```text
 .
 |-- src/ or app/          Main source code
 |-- public/ or assets/    Static assets when available
-|-- docs/                 Notes, specs, or deployment docs when available
-|-- README.md             English-first bilingual project guide
--- package / project files
-`
-
-## Deployment / Packaging
-
-- Do not commit generated builds, local databases, API keys, private logs, or large media files.
-- For frontend projects, deploy the production dist/ folder to GitHub Pages, Vercel, Netlify, Nginx, or package it with DistDesktopLauncher.
-- For desktop/mobile projects, publish only release artifacts from a clean build environment.
-- Keep configuration examples public and real credentials private.
+|-- docs/                 Screenshots, notes, or deployment docs
+|-- README.md             GitHub landing README
+|-- README.en.md          English documentation
+`-- README.cn.md          Chinese documentation
+```
 
 ## Roadmap
 
-- [ ] MCP server wrapper for visual generation
-- [ ] Provider presets for popular AI gateways
-- [ ] Gallery for generated assets
-- [ ] More prompt packs and example screenshots
+- [ ] Add more real-world examples and screenshots.
+- [ ] Expand tests or smoke checks for the primary workflow.
+- [ ] Publish clean release artifacts where the project type supports it.
+- [ ] Keep documentation friendly for new contributors.
 
 ## Contributing
 
-Issues and pull requests are welcome. Useful contributions include better screenshots, demos, docs, templates, presets, provider guides, compatibility fixes, tests, and translations.
+Issues and pull requests are welcome. Useful contributions include screenshots, demos, docs, templates, presets, compatibility fixes, tests, and translations.
 
 If this project helps you, a star and fork make it easier for more people to discover it.
-
-
-
-
